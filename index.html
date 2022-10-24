@@ -21,15 +21,32 @@
 <body>
     <div class="container py-3">
         <header>
-            <div class="row">
-                <div class="d-flex flex-column flex-md-row pb-3 mb-4 border-bottom">
+            <nav class="navbar d-flex flex-column flex-md-row pb-3 mb-4">
+                <div class="container-fluid">
                     <img src="ImgLogo/padrao.svg" width="50" height="42">
-                    <span class="fs-3">Padrão Certificado Digital</span>
+                    <a class="navbar-brand fs-3" href="#">Padrão Certificado Digital</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                    </div>
                 </div>
+            </nav>
+
+            <div class="row">
                 <div class="pricing-header p-3 pb-md-4 mx-auto text-center ">
                     <img src="ImgLogo/locopadrao.png" width="430">
                 </div>
+
             </div>
+
         </header>
 
         <main>
@@ -137,7 +154,7 @@
                                             <div class="col-sm-12 col-lg-6">
                                                 <div class="card-body">
                                                     <a href="https://validacao-interna.validcertificadora.com.br/"
-                                                        class="btn btn-lg btn-primary" target="_blank"
+                                                        class="btnValidacao btn btn-lg btn-primary" target="_blank"
                                                         role="button"><img width="35" height="35"
                                                             src="https://img.icons8.com/color/48/000000/video-call--v1.png" />Validação
                                                         de CPF para Videoconfêrencia
